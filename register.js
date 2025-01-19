@@ -11,7 +11,7 @@ const p = document.querySelector("#error")
 form.addEventListener("submit" , (event)=>{
     event.preventDefault();
 
-    createUserWithEmailAndPassword(auth, email.value, password.value , div)
+    createUserWithEmailAndPassword(auth, email.value, password.value , p)
   .then((userCredential) => {
     const user = userCredential.user;
     console.log(user);
