@@ -6,7 +6,7 @@ import {auth} from "./firebaseconfig.js"
 const form = document.querySelector("#form")
 const email = document.querySelector("#email")
 const password = document.querySelector("#password")
-const div = document.querySelector("#container")
+const p = document.querySelector("#error")
 
 form.addEventListener("submit" , (event)=>{
     event.preventDefault();
@@ -20,7 +20,7 @@ form.addEventListener("submit" , (event)=>{
   .catch((error) => {
     const errorMessage = error.message;
     console.log(errorMessage);
-    div.innerHTML = errorMessage
+    p.innerHTML = errorMessage
 
     
   });
