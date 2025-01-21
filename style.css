@@ -1,0 +1,89 @@
+body{
+    height: 100vh;
+    background: linear-gradient( 50deg ,#45abe0  , #45abe0  , #964dea , #964dea );
+    text-align: center; 
+}
+
+h1{
+    font-size: 3rem
+}
+
+.txt-center{
+    text-align: center;
+}
+
+#form{
+    
+    text-align: center;
+    margin: 0px 20% ;
+    padding: 10%;
+}
+
+.input{
+    padding-right: 50%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.btn-login{
+    padding: 12px 35%;
+    background-color: #13e0ea;
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: bolder;
+}
+
+.btn-login:hover{
+    color: #7009e6;
+    background-color: #d3a8ae;
+}
+
+a{
+    text-decoration: none;
+    color: #f0ffff;
+}
+
+a:hover{
+    border-bottom: 2px solid #000000;
+    transition-delay: initial;
+}
+
+#googleBtn{
+    padding: 10px 10%;
+    border-radius: 50px;
+}
+
+#googleBtn:hover{
+    background-color: lightgray;
+
+}
+
+img{
+    width: 20px;
+    display: inline;
+}
+
+.btn-register{
+    padding: 12px 32%;
+    background-color: #13e0ea;
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: bolder;
+}
+
+.btn-register:hover{
+    color: #7009e6;
+    background-color: #d3a8ae;
+}
+
+#logout-btn{
+    padding: 5px 5%;
+    background-color: #13e0ea;
+    font-size: 1rem;
+    font-style: bolder;
+}
+
+#logout-btn:hover{
+    color: #7009e6;
+    background-color: #d3a8ae;
+}

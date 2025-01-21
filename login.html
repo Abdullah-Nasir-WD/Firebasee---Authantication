@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1>Login user</h1>
     <form id="form">
-        <input type="email" placeholder="enter your email" id="email"> <br><br>
-        <input type="password" placeholder="enter your password" id="password"> <br><br>
-        <button type="submit">Login User</button> <br><br>
+        <h1>Login Form</h1>
+        <input type="email" placeholder="enter your email" id="email" class="input"> <br><br>
+        <input type="password" placeholder="enter your password" id="password" class="input"> <br><br>
+        <button class="btn-login" type="submit">LOGIN</button> <br><br>
 
-        <a href="./register.html">Not a user?</a>
+        <a href="./register.html">Dont have an account?</a><br/><br/>
+        <button id="googleBtn"><img src="./Assets/google icon image.png" alt="">Login With Googel</button>
     </form>
+
 
     <div id="container"></div>
     
     <script type="module" src="./login.js"></script>
+    <script src="https://kit.fontawesome.com/70465652f7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
