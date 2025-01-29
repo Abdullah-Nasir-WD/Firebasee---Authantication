@@ -12,14 +12,16 @@ const div = document.querySelector("#container")
 form.addEventListener("submit" , (event)=>{
     event.preventDefault();
 
-    signInWithEmailAndPassword(auth, email.value, password.value)
+    signInWithEmailAndPassword(auth, email.value, password.value , div)
     .then((userCredential) => {
         const user = userCredential.user;
+        console.log(user);
         window.location = "index.html"
     })
     .catch((error) => {
         const errorMessage = error.message;
-        alert(errorMessage)
+        console.log(errorMessage)
+        // div.innerHTML = errorMessage  
     });
 })
 
@@ -32,17 +34,16 @@ googleBtn.addEventListener( "click" , () => {
 
 
 
-    signInWithPopup(auth, provider)
-        .then((result) => {
-            const credential = GoogleAuthProvider.credentialFromResult(result);
-            const token = credential.accessToken;
-            const user = result.user;
-            console.log(user);
-        }).catch((error) => {
-            const errorMessage = error.message;
-            console.log(errorMessage);
-        
-        });
+  signInWithPopup(auth, provider)
+  .then((result) => {
+      const credential = GoogleAuthProvider.credentialFromResult(result);
+      const token = credential.accessToken;
+      const user = result.user;
+      window.location = "index.html";
+  }).catch((error) => {
+      const errorMessage = error.message;
+      console.log(errorMessage);
+  });
 
 
 })
